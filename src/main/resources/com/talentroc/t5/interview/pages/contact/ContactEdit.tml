@@ -1,4 +1,20 @@
 <html t:type="layout" title="Create/Edit contact"
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
       xmlns:p="tapestry:parameter">
+	 
+	  <p>&nbsp;</p>
+	<t:form>  
+		<t:beaneditor t:id="contact"   >
+			<p:id>
+			<t:label for="id"/>
+			<t:textfield t:id="id" value="contact.id"/>
+				<em>Seulement pour la maj</em>
+			</p:id>
+		</t:beaneditor>
+			<p>
+			<t:submit value="maj" t:id="maj"/> &nbsp;
+			<t:submit value="creer"/>
+			</p>
+		 
+	</t:form>  
 </html>

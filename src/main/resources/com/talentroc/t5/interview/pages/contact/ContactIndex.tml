@@ -3,5 +3,5 @@
         >
 <t:pagelink page="contact/contactedit" class="btn btn-default">Créer un contact</t:pagelink>
 <p>&nbsp;</p>
-<t:grid source="contacts" row="contact" exclude="id"></t:grid>
+<t:grid source="contacts" row="contact" ></t:grid>
 </html>

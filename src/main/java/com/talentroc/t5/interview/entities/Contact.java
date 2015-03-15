@@ -9,6 +9,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import java.io.Serializable;
 import java.util.Objects;
+import org.apache.tapestry5.beaneditor.NonVisual;
 
 @Entity
 @NamedQueries({@NamedQuery(name = Contact.RETRIEVE_ALL, query = "SELECT c FROM Contact c")})
