@@ -17,7 +17,16 @@ public class ContactManagerImpl implements ContactManager {
 
     @Override
     public void validate(final Contact contact) throws BusinessException {
-        // TODO - Ecrire le code de validation du contact.
+        if (contact.getFirstName().length() > 50){
+				throw new BusinessException("Taille de prénom trop long");
+		}
+		else if(contact.getLastName() == null || contact.getLastName().length() < 3 || contact.getLastName().length() > 50 ){
+				throw new BusinessException("Taille de nom invalide");
+		}
+		else if(contact.getTelephone().length() != 10 || !contact.getTelephone().matches("[0-9]*")){
+				throw new BusinessException("numéro de telephone invalide");
+		}
+		
     }
 
     @Override
